@@ -1,0 +1,8 @@
+Select a fruit!
+<form method="post" action="/favorite_fruit">
+    {% for fruit in fruits %}
+        <input type="checkbox" name="fruit" value="{{ fruit }}" />{{ fruit }}
+        <br />
+    {% endfor %}
+    <input type="submit" />
+</form>
